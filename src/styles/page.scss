@@ -702,7 +702,7 @@
 
 .blackbox {
   width: 100%;
-  height: 245px;
+  height: fit-content;
   border-radius: 8px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2B2B2B;
 }
@@ -712,7 +712,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 3vw;
   color: #FFFFFF;
 }
 
@@ -725,7 +724,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;  
+  line-height: 24px;
   letter-spacing: 0.14px;
   color: #FFFFFF;
 }
