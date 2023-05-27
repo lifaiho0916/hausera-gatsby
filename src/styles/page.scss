@@ -52,25 +52,25 @@
 
 
 .btn_compare {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 13px;
-    align-items: center;
-    text-align: center;
-    color: #2B2B2B;
-    background-color:#F3F3F3;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 13px;
+  align-items: center;
+  text-align: center;
+  color: #2B2B2B;
+  background-color: #F3F3F3;
 }
 
 .btn_vender {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 13px;
-    align-items: center;
-    text-align: center;
-    color: #A0A0A2;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 13px;
+  align-items: center;
+  text-align: center;
+  color: #A0A0A2;
 }
 
 @media (max-width: 768px) {
@@ -135,7 +135,7 @@
 
 .card1 {
   padding-right: 0px;
-} 
+}
 
 .card2 {
   padding-left: 0px;
@@ -162,7 +162,7 @@
   height: 400px;
 }
 
-.scrollbar-hidden ::-webkit-scrollbar{
+.scrollbar-hidden ::-webkit-scrollbar {
   overflow: hidden;
   display: none;
 }
@@ -207,7 +207,14 @@
   width: 4.08px;
   height: 12px;
   left: 1202.92px;
-  top: 909px;  
+  top: 909px;
+  background: #F3F3F3;
+  border-radius: 4px;
+}
+
+.table::-webkit-scrollbar {
+  height: 10px;
+  width: 4px;
   background: #F3F3F3;
   border-radius: 4px;
 }
@@ -282,7 +289,7 @@
   width: 4.08px;
   height: 12px;
   left: 1202.92px;
-  top: 909px;  
+  top: 909px;
   background: #CCC;
   border-radius: 4px;
 }
@@ -659,9 +666,9 @@
 }
 
 .vertical_divider1 {
-    border-right: 1px solid var(--bs-whitebox-color);
-    padding-right: 24px;
-  }
+  border-right: 1px solid var(--bs-whitebox-color);
+  padding-right: 24px;
+}
 
 @media screen and (max-width: 768px) {
   .houseimg {
@@ -749,7 +756,7 @@
   height: 75px;
   background: #F3F3F3;
   border-radius: 8px;
-  border:none;
+  border: none;
 }
 
 .Amigosbtn:hover {
@@ -764,7 +771,7 @@
   line-height: 19px;
   align-items: center;
   text-align: center;
-  color:   #2B2B2B;
+  color: #2B2B2B;
 }
 
 .number {
@@ -779,313 +786,313 @@
 }
 
 .rightfirst {
-    width: 100%;
-    height: 342px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    padding-top: 36px;
-    padding-left: 22px;
-    padding-right: 27px;
-    box-shadow: 0px 25px 50px -12px rgba(164, 164, 164, 0.25);
+  width: 100%;
+  height: 342px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding-top: 36px;
+  padding-left: 22px;
+  padding-right: 27px;
+  box-shadow: 0px 25px 50px -12px rgba(164, 164, 164, 0.25);
 }
 
 .invitar {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .copiarlongbox {
-    width: 100%;
-    height: 48px;
-    border: 1px solid #CCCCCC;
-    border-radius: 8px;
-    background-color: white;
-    padding: 4px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  background-color: white;
+  padding: 4px;
 }
 
 .copiarbtn {
-    width: 104.91px;
-    height: 40px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2B2B2B;
-    border-radius: 8px;
-    color: white;
+  width: 104.91px;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2B2B2B;
+  border-radius: 8px;
+  color: white;
 }
 
 .copiatxt {
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
-    width: 100%;
-    margin-top: 54px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
+  width: 100%;
+  margin-top: 54px;
 }
 
 .copiatxt2 {
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
-    width: 100%;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
+  width: 100%;
 }
 
 .h-42 {
-    height: 42px;
+  height: 42px;
 }
 
 .pt-10 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .rightsecond {
-    width: 100;
-    height: 246px;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 25px 50px -12px rgba(164, 164, 164, 0.25);
-    border-radius: 8px;
-    margin-top: 27px;
-    padding: 40px 24px;
+  width: 100;
+  height: 246px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 25px 50px -12px rgba(164, 164, 164, 0.25);
+  border-radius: 8px;
+  margin-top: 27px;
+  padding: 40px 24px;
 }
 
 .mb-18 {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .recompen {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .eur50 {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .eur60 {
-    font-family: Rubik;
-    font-weight: 300;
-    height: 14px;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 300;
+  height: 14px;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .eur60-1 {
-    font-family: Rubik;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .eurbox {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .pl-13 {
-    padding-left: 13px;
+  padding-left: 13px;
 }
 
 .pt-13 {
-    padding-top: 13px;
+  padding-top: 13px;
 }
 
 .pt-26 {
-    padding-top: 26px;
+  padding-top: 26px;
 }
 
 .cantxt {
-    font-family: Rubik;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    align-items: center;
-    letter-spacing: 0.14px;
-    color: #000000;
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.14px;
+  color: #000000;
 }
 
 .ml-55 {
-    margin-left: 55px;
+  margin-left: 55px;
 }
 
 .lastbox {
-    font-family: Rubik;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: 0.14px;
-    text-decoration-line: underline;
-    color: #A0A0A2;
-    margin-top: 40px;
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.14px;
+  text-decoration-line: underline;
+  color: #A0A0A2;
+  margin-top: 40px;
 }
 
 .h-24 {
-    height: 24px;
+  height: 24px;
 }
 
 .ml-17 {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 .leftthird {
-    width: 100%;
-    height: fit-content;
-    background: #F3F3F3;
-    box-shadow: 0px 25px 50px -12px rgba(255, 164, 164, 0.25);
-    border-radius: 8px;
-    margin-top: 27px;
+  width: 100%;
+  height: fit-content;
+  background: #F3F3F3;
+  box-shadow: 0px 25px 50px -12px rgba(255, 164, 164, 0.25);
+  border-radius: 8px;
+  margin-top: 27px;
 }
 
 .mt-25 {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .pt-25 {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .bgc1 {
-    background-color: white;
+  background-color: white;
 }
 
 .thirdtab {
-    width: 100%;
-    height: fit-content;
-    left: 194px;
-    top: 564px;
-    background: #FFFFFF;
-    border: 0.956075px solid #F3F3F3;
-    box-shadow: 0px 23.9019px 47.8037px -11.4729px rgba(164, 164, 164, 0.25);
-    border-radius: 7.6486px;
+  width: 100%;
+  height: fit-content;
+  left: 194px;
+  top: 564px;
+  background: #FFFFFF;
+  border: 0.956075px solid #F3F3F3;
+  box-shadow: 0px 23.9019px 47.8037px -11.4729px rgba(164, 164, 164, 0.25);
+  border-radius: 7.6486px;
 }
 
 .Acer {
-    width: 292.56px;
-    height: 23px;
-    font-family: 'ubik';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    margin-top: 27px;
-    padding-left: 36px;
+  width: 292.56px;
+  height: 23px;
+  font-family: 'ubik';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 27px;
+  padding-left: 36px;
 }
 
 .Tresbox {
-    margin-top: 23px;
-    border: 0.956075px solid #E0E1E4;
-    height: fit-content;
-    border-radius: 8px;
-    margin-left: 21px;
-    margin-right: 22px;
-    margin-bottom: 20px;
+  margin-top: 23px;
+  border: 0.956075px solid #E0E1E4;
+  height: fit-content;
+  border-radius: 8px;
+  margin-left: 21px;
+  margin-right: 22px;
+  margin-bottom: 20px;
 }
 
 .Tres {
-    height: fit-content;
-    background: #F3F3F3;
-    border-radius: 8px 8px 0px 0px;
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    text-align: center;
-    padding: 8px;
+  height: fit-content;
+  background: #F3F3F3;
+  border-radius: 8px 8px 0px 0px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  padding: 8px;
 }
 
 .Group {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .Group2 {
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    margin-top: 13px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 13px;
 }
 
 .Group3 {
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #A0A0A2;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #A0A0A2;
 }
 
 .pagos {
-    width: 168.27px;
-    height: fit-content;
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 17.2093px;
-    line-height: 23px;
-    padding-left: 4px;
-    margin: 0px 20px 0px 20px;
+  width: 168.27px;
+  height: fit-content;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 17.2093px;
+  line-height: 23px;
+  padding-left: 4px;
+  margin: 0px 20px 0px 20px;
 }
 
 .ulol {
-    height: fit-content;
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #A0A0A2;
-    margin: 20px 20px 0px 20px;
-    
-    ul {
-      font-size: 18px;
-    }
+  height: fit-content;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #A0A0A2;
+  margin: 20px 20px 0px 20px;
+
+  ul {
+    font-size: 18px;
+  }
 }
 
 .Tres2 {
-    height: fit-content;
-    margin-left: 0px;
-    margin-right: 0px;
+  height: fit-content;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .overflow-y-scroll {
-    max-height: 180px;
-    overflow-y: scroll;
+  max-height: 180px;
+  overflow-y: scroll;
 }
 
 .overflow-y-scroll::-webkit-scrollbar {
-    width: 4.08px;
-    height: 12px;
-    left: 1202.92px;
-    top: 909px;  
-    background: #F3F3F3;
-    border-radius: 4px;
-  }
+  width: 4.08px;
+  height: 12px;
+  left: 1202.92px;
+  top: 909px;
+  background: #F3F3F3;
+  border-radius: 4px;
+}

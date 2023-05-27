@@ -30,7 +30,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "react-super-responsive-table": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^18.16.5",

@@ -3,6 +3,8 @@ import type { PageProps } from "gatsby";
 import Header from "./header";
 import "../styles/page.scss";
 import { Modal } from "react-bootstrap";
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 const list = [
   { id: 1, name: "Cartagenda_1", value: 100, checked: true },
@@ -142,10 +144,7 @@ const Page2Page: React.FC<PageProps> = () => {
                     Invita a tus amigos,
                   </p>
                   <p className="Invitetxt">
-                    gana&nbsp;
-                    <span className="recom">
-                      recompensas
-                    </span>
+                    gana <span className="recom">recompensas</span>
                   </p>
                 </div>
                 <p className="unete">
@@ -199,47 +198,45 @@ const Page2Page: React.FC<PageProps> = () => {
                   </button>
                 </div>
                 {flag === "Actividad amigos" && (
-                  <div className="table-responsive">
-                    <table className="table bgc1 pt-25" style={{ width: '100%', overflowX: 'scroll' }}>
-                      <thead className="detail_table_item">
-                        <tr style={{ padding: '0px 10px' }}>
-                          <th className="table_header_item_text">User</th>
-                          <th className="table_header_item_text">Fecha</th>
-                          <th className="table_header_item_text">Expiración</th>
-                          <th className="table_header_item_text">Inversión</th>
-                          <th className="table_header_item_text">Recompensa</th>
-                        </tr>
-                      </thead>
-                      <tbody className="watch_list">
+                    <Table className="table bgc1">
+                      <Thead className="detail_table_item">
+                        <Tr style={{ padding: '0px 10px' }}>
+                          <Th className="table_header_item_text">User</Th>
+                          <Th className="table_header_item_text">Fecha</Th>
+                          <Th className="table_header_item_text">Expiración</Th>
+                          <Th className="table_header_item_text">Inversión</Th>
+                          <Th className="table_header_item_text">Recompensa</Th>
+                        </Tr>
+                      </Thead>
+                      <Tbody className="watch_list">
                         {detailList.map((item) => {
                           return (
-                            <tr className="table_item_divider" key={item.id}>
-                              <td className="table_item_text detail_table_tbody_item">
+                            <Tr className="table_item_divider" key={item.id}>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.seller}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.property}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.price}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.percent}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.value}
-                              </td>
-                            </tr>
+                              </Td>
+                            </Tr>
                           );
                         })}
-                      </tbody>
-                    </table>
-                  </div>
+                      </Tbody>
+                    </Table>
                 )}
                 {flag === "Recompensas" && (
 
                   <div className="table-responsive">
-                    <table className="table bgc1 pt-25" style={{ width: '100%', overflowX: 'scroll' }}>
+                    <table className="table bgc1">
                       <thead className="detail_table_item">
                         <tr style={{ padding: '0px 10px' }}>
                           <th className="table_header_item_text">User</th>
