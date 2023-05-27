@@ -52,24 +52,25 @@
 
 
 .btn_compare {
-  font-family: Rubik;
+  width: fit-content;
+  padding: 20px 15px;
+  font-family: 'Rubik';
+  font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 13px;
-  align-items: center;
-  text-align: center;
   color: #2B2B2B;
   background-color: #F3F3F3;
 }
 
 .btn_vender {
-  font-family: Rubik;
+  width: fit-content;
+  padding: 20px 15px;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 13px;
-  align-items: center;
-  text-align: center;
   color: #A0A0A2;
 }
 
@@ -447,19 +448,6 @@
   margin-right: 23px;
 }
 
-// .btn_daily_active {
-//   background: rgba(229, 232, 235, 0.5);
-//   border: 0.6px solid var(--bs-grey-button-bg-color);
-//   border-radius: 7.04751px 0px 0px 7.04751px;
-//   outline: none;
-//   color: #04111d;
-//   font-weight: var(--bs-bold-font-weight);
-//   font-size: 9px;
-//   line-height: 13px;
-//   font-family: Poppins;
-//   padding: 7px;
-// }
-
 .btn_detail {
   margin: 0 10px;
 }
@@ -475,14 +463,6 @@
   font-family: Poppins;
   padding: 7px;
 }
-
-// .btn_daily_active:hover {
-//   border-color: #e3e3e3;
-// }
-
-// .btn_daily:hover {
-//   border-color: #e3e3e3;
-// }
 
 .fourbox {
   border-width: 0.58px 0px;
@@ -610,11 +590,13 @@
 }
 
 .table_header_item_text {
-  color: var(--bs-capital-color);
-  font-weight: var(--bs-bolder-font-weight);
-  font-size: var(--bs-small-font-size);
-  line-height: 18px;
-  font-family: Space Grotesk;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.9px;
+  padding: 8px 0px;
 }
 
 .detail_txt {
@@ -627,12 +609,14 @@
 }
 
 .detail_table_item {
-  padding-left: 20px;
   border-bottom: 1px solid #6f6f6f33;
-  padding-bottom: 12px;
-}
-
-.detail_table_tbody_item {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.9px;
+  color: #A0A0A2;
   padding: 20px 0;
 }
 
@@ -881,10 +865,12 @@
 }
 
 .eur50 {
-  font-family: Rubik;
+  font-family: 'Rubik';
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
+  display: flex;
   align-items: center;
   letter-spacing: 0.14px;
   color: #000000;
@@ -930,12 +916,14 @@
 }
 
 .cantxt {
-  font-family: Rubik;
+  margin-top: 25px;
+  font-family: 'Rubik';
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   align-items: center;
   letter-spacing: 0.14px;
+  list-style: none;
   color: #000000;
 }
 
@@ -944,7 +932,7 @@
 }
 
 .lastbox {
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -952,7 +940,6 @@
   letter-spacing: 0.14px;
   text-decoration-line: underline;
   color: #A0A0A2;
-  margin-top: 40px;
 }
 
 .h-24 {
@@ -982,6 +969,18 @@
 
 .bgc1 {
   background-color: white;
+  padding: 10px 20px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .detail_table_item {
+    padding: 0px;
+  }
+
+  tr {
+    border: 0px solid #000 !important;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.2) !important;
+  }
 }
 
 .thirdtab {

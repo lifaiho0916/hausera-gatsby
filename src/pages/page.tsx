@@ -20,22 +20,6 @@ const list = [
   { id: 11, name: "Cartagenda_17", value: 0, checked: false },
 ];
 
-const watchList = [
-  { id: 1, name: "Cartagenda_2", percent: "4%", value: "60d" },
-  { id: 2, name: "Cartagenda_1", percent: "4%", value: "60d" },
-  { id: 3, name: "Cartagenda_3", percent: "4%", value: "60d" },
-  { id: 4, name: "Cartagenda_17", percent: "4%", value: "60d" },
-];
-
-const trendingList = [
-  { id: 1, name: "Cartagenda_2", percent: "4%", value: "60d" },
-  { id: 2, name: "Cartagenda_2", percent: "4%", value: "60d" },
-  { id: 3, name: "Cartagenda_2", percent: "4%", value: "60d" },
-  { id: 4, name: "Cartagenda_2", percent: "4%", value: "60d" },
-  { id: 5, name: "Cartagenda_2", percent: "4%", value: "60d" },
-
-];
-
 const detailList = [
   {
     id: 1,
@@ -171,36 +155,31 @@ const Page2Page: React.FC<PageProps> = () => {
               </div>
 
               <div className="leftthird">
-                <div className="d-flex gap-30" id="pills-tab" role="tablist ">
+                <div className="d-flex" style={{ display: 'flex' }} id="pills-tab" role="tablist ">
                   <button
-                    className={
-                      flag === "Actividad amigos" ? "btn btn_compare" : "btn btn_vender"
-                    }
+                    className={flag === "Actividad amigos" ? "btn btn_compare" : "btn btn_vender"}
                     onClick={() => setFlag("Actividad amigos")}
                   >
                     Actividad amigos
                   </button>
                   <button
-                    className={
-                      flag === "Recompensas" ? "btn btn_compare" : "btn btn_vender"
-                    }
+                    className={flag === "Recompensas" ? "btn btn_compare" : "btn btn_vender"}
                     onClick={() => setFlag("Recompensas")}
                   >
                     Recompensas
                   </button>
                   <button
-                    className={
-                      flag === "Sobre" ? "btn btn_compare" : "btn btn_vender"
-                    }
+                    className={flag === "Sobre" ? "btn btn_compare" : "btn btn_vender"}
                     onClick={() => setFlag("Sobre")}
                   >
                     Sobre
                   </button>
                 </div>
                 {flag === "Actividad amigos" && (
-                    <Table className="table bgc1">
+                  <div className="bgc1" style={{ padding: '10px 20px 20px 20px' }}>
+                    <Table>
                       <Thead className="detail_table_item">
-                        <Tr style={{ padding: '0px 10px' }}>
+                        <Tr>
                           <Th className="table_header_item_text">User</Th>
                           <Th className="table_header_item_text">Fecha</Th>
                           <Th className="table_header_item_text">Expiración</Th>
@@ -208,7 +187,7 @@ const Page2Page: React.FC<PageProps> = () => {
                           <Th className="table_header_item_text">Recompensa</Th>
                         </Tr>
                       </Thead>
-                      <Tbody className="watch_list">
+                      <Tbody>
                         {detailList.map((item) => {
                           return (
                             <Tr className="table_item_divider" key={item.id}>
@@ -232,40 +211,40 @@ const Page2Page: React.FC<PageProps> = () => {
                         })}
                       </Tbody>
                     </Table>
+                  </div>
                 )}
                 {flag === "Recompensas" && (
-
-                  <div className="table-responsive">
-                    <table className="table bgc1">
-                      <thead className="detail_table_item">
-                        <tr style={{ padding: '0px 10px' }}>
-                          <th className="table_header_item_text">User</th>
-                          <th className="table_header_item_text">Fecha</th>
-                          <th className="table_header_item_text">Inversión</th>
-                          <th className="table_header_item_text">Recompensa</th>
-                        </tr>
-                      </thead>
-                      <tbody className="watch_list">
+                  <div className="bgc1">
+                    <Table>
+                      <Thead className="detail_table_item">
+                        <Tr>
+                          <Th className="table_header_item_text">User</Th>
+                          <Th className="table_header_item_text">Fecha</Th>
+                          <Th className="table_header_item_text">Inversión</Th>
+                          <Th className="table_header_item_text">Recompensa</Th>
+                        </Tr>
+                      </Thead>
+                      <Tbody>
                         {detailList2.map((item) => {
                           return (
-                            <tr className="table_item_divider" key={item.id}>
-                              <td className="table_item_text detail_table_tbody_item">
+                            <Tr className="table_item_divider" key={item.id}>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.seller}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.property}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.price}
-                              </td>
-                              <td className="table_item_text detail_table_tbody_item">
+                              </Td>
+                              <Td className="table_item_text detail_table_tbody_item">
                                 {item.percent}
-                              </td>
-                            </tr>
+                              </Td>
+                            </Tr>
                           );
                         })}
-                      </tbody>
-                    </table>
+                      </Tbody>
+                    </Table>
                   </div>
                 )}
                 {flag === "Sobre" && (
@@ -407,11 +386,18 @@ const Page2Page: React.FC<PageProps> = () => {
                   </div>
                   <div className="d-flex pl-13 flex-column">
                     <div className="eur50">
-                      50€
+                      Pagado : 180 €
                     </div>
-                    <div className="eur60 pt-13">
-                      canjeados de&nbsp;
-                      <span className="eur60-1">60€</span>
+                    <div className="eur50">
+                      Pendiente: 60 €
+                    </div>
+                    <div style={{ display: 'flex' }}>
+                      <div className="eur50">
+                        Bloqueado: 0 €
+                      </div>&nbsp;&nbsp;&nbsp;
+                      <div className="lastbox">
+                        Saber más
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -420,9 +406,6 @@ const Page2Page: React.FC<PageProps> = () => {
                     <li>Canjeado</li>
                     <li className="ml-55">Pendiente</li>
                   </ul>
-                </div>
-                <div className="lastbox">
-                  Saber más
                 </div>
               </div>
             </div>
