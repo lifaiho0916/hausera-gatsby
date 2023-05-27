@@ -403,7 +403,7 @@ const Page2Page: React.FC<PageProps> = () => {
                 </div>
                 <div className="pt-26 d-flex h-24">
                   <ul className="d-flex cantxt">
-                    <li>Canjeado</li>
+                    <li>Pagado</li>
                     <li className="ml-55">Pendiente</li>
                   </ul>
                 </div>
