@@ -1,0 +1,41 @@
+{
+  "name": "hausera_gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "hausera_gatsby",
+  "author": "Laura6388Github",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "^4.5.9",
+    "@fontsource/inter": "^4.5.15",
+    "@fontsource/poppins": "^4.5.10",
+    "@fontsource/rubik": "^4.5.14",
+    "@fontsource/space-grotesk": "^4.5.13",
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "gatsby": "^5.9.1",
+    "gatsby-plugin-sass": "^6.10.0",
+    "jquery": "^3.7.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.5",
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.4",
+    "typescript": "^5.0.4"
+  }
+}
