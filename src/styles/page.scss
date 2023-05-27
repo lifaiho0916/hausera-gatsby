@@ -54,7 +54,7 @@
 .btn_compare {
     font-family: Rubik;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 22px;
     line-height: 13px;
     align-items: center;
     text-align: center;
@@ -66,11 +66,21 @@
     font-family: Rubik;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 22px;
     line-height: 13px;
     align-items: center;
     text-align: center;
     color: #A0A0A2;
+}
+
+@media (max-width: 768px) {
+  .btn_compare {
+    font-size: 15px;
+  }
+
+  .btn_vender {
+    font-size: 15px;
+  }
 }
 
 .gap-30 {
@@ -189,6 +199,7 @@
   max-height: 400px;
   width: 100%;
   overflow-y: scroll;
+  overflow-x: scroll;
   padding-left: 0;
 }
 
@@ -968,7 +979,7 @@
 
 .thirdtab {
     width: 100%;
-    height: 447.44px;
+    height: fit-content;
     left: 194px;
     top: 564px;
     background: #FFFFFF;
@@ -991,14 +1002,15 @@
 .Tresbox {
     margin-top: 23px;
     border: 0.956075px solid #E0E1E4;
-    height: 220px;
+    height: fit-content;
     border-radius: 8px;
     margin-left: 21px;
     margin-right: 22px;
+    margin-bottom: 20px;
 }
 
 .Tres {
-    height: 39px;
+    height: fit-content;
     background: #F3F3F3;
     border-radius: 8px 8px 0px 0px;
     font-family: Rubik;
@@ -1035,27 +1047,31 @@
 
 .pagos {
     width: 168.27px;
-    height: 23px;
+    height: fit-content;
     font-family: Rubik;
     font-weight: 400;
     font-size: 17.2093px;
     line-height: 23px;
-    padding-top: 15px;
     padding-left: 4px;
+    margin: 0px 20px 0px 20px;
 }
 
 .ulol {
-    height: 69px;
+    height: fit-content;
     font-family: Rubik;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 20px;
     line-height: 23px;
     color: #A0A0A2;
-    margin-top: 20px;
+    margin: 20px 20px 0px 20px;
+    
+    ul {
+      font-size: 18px;
+    }
 }
 
 .Tres2 {
-    height: 180px;
+    height: fit-content;
     margin-left: 0px;
     margin-right: 0px;
 }

@@ -172,245 +172,180 @@ const Page2Page: React.FC<PageProps> = () => {
               </div>
 
               <div className="leftthird">
-                  <div className="d-flex gap-30" id="pills-tab" role="tablist ">
-                    <button
-                      className={
-                        flag === "Actividad amigos" ? "btn btn_compare" : "btn btn_vender"
-                      }
-                      onClick={() => setFlag("Actividad amigos")}
-                    >
-                      Actividad amigos
-                    </button>
-                    <button
-                      className={
-                        flag === "Recompensas" ? "btn btn_compare" : "btn btn_vender"
-                      }
-                      onClick={() => setFlag("Recompensas")}
-                    >
-                      Recompensas
-                    </button>
-                    <button
-                      className={
-                        flag === "Sobre" ? "btn btn_compare" : "btn btn_vender"
-                      }
-                      onClick={() => setFlag("Sobre")}
-                    >
-                      Sobre
-                    </button>
-                  </div>
-                  {flag === "Actividad amigos" && (
-                    <div className="overflow-x-scroll bgc1 pt-25">
-                      <div className="detail_table_item d-flex">
-                        <p className="table_header_item_text mb-0" style={{ width: "25%" }}>
-                          User
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "15%" }}
-                        >
-                          Fecha
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "20%" }}
-                        >
-                          Expiración
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "20%" }}
-                        >
-                          Inversión
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "20%" }}
-                        >
-                          Recompensa
-                        </p>
-                      </div>
-                      <div className="watch_list">
+                <div className="d-flex gap-30" id="pills-tab" role="tablist ">
+                  <button
+                    className={
+                      flag === "Actividad amigos" ? "btn btn_compare" : "btn btn_vender"
+                    }
+                    onClick={() => setFlag("Actividad amigos")}
+                  >
+                    Actividad amigos
+                  </button>
+                  <button
+                    className={
+                      flag === "Recompensas" ? "btn btn_compare" : "btn btn_vender"
+                    }
+                    onClick={() => setFlag("Recompensas")}
+                  >
+                    Recompensas
+                  </button>
+                  <button
+                    className={
+                      flag === "Sobre" ? "btn btn_compare" : "btn btn_vender"
+                    }
+                    onClick={() => setFlag("Sobre")}
+                  >
+                    Sobre
+                  </button>
+                </div>
+                {flag === "Actividad amigos" && (
+                  <div className="table-responsive">
+                    <table className="table bgc1 pt-25" style={{ width: '100%', overflowX: 'scroll' }}>
+                      <thead className="detail_table_item">
+                        <tr style={{ padding: '0px 10px' }}>
+                          <th className="table_header_item_text">User</th>
+                          <th className="table_header_item_text">Fecha</th>
+                          <th className="table_header_item_text">Expiración</th>
+                          <th className="table_header_item_text">Inversión</th>
+                          <th className="table_header_item_text">Recompensa</th>
+                        </tr>
+                      </thead>
+                      <tbody className="watch_list">
                         {detailList.map((item) => {
                           return (
-                            <div className="table_item_divider" key={item.id}>
-                              <div className="detail_table_item d-flex">
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "25%" }}
-                                >
-                                  {item.seller}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "15%" }}
-                                >
-                                  {item.property}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "20%" }}
-                                >
-                                  {item.price}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "20%" }}
-                                >
-                                  {item.percent}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "20%" }}
-                                >
-                                  {item.value}
-                                </p>
-                              </div>
-                            </div>
+                            <tr className="table_item_divider" key={item.id}>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.seller}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.property}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.price}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.percent}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.value}
+                              </td>
+                            </tr>
                           );
                         })}
-                      </div>
-                    </div>
-                  )}
-                  {flag === "Recompensas" && (
-                    
-                    <div className="overflow-x-scroll bgc1 pt-25">
-                      <div className="detail_table_item d-flex ">
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "25%" }}
-                        >
-                          User
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "25%" }}
-                        >
-                          Fecha
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "25%" }}
-                        >
-                          Inmueble
-                        </p>
-                        <p
-                          className="table_header_item_text mb-0"
-                          style={{ width: "25%" }}
-                        >
-                          Recompensa
-                        </p>
-                      </div>
-                      <div className="watch_list">
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {flag === "Recompensas" && (
+
+                  <div className="table-responsive">
+                    <table className="table bgc1 pt-25" style={{ width: '100%', overflowX: 'scroll' }}>
+                      <thead className="detail_table_item">
+                        <tr style={{ padding: '0px 10px' }}>
+                          <th className="table_header_item_text">User</th>
+                          <th className="table_header_item_text">Fecha</th>
+                          <th className="table_header_item_text">Inversión</th>
+                          <th className="table_header_item_text">Recompensa</th>
+                        </tr>
+                      </thead>
+                      <tbody className="watch_list">
                         {detailList2.map((item) => {
                           return (
-                            <div className="table_item_divider" key={item.id}>
-                              <div className="detail_table_item d-flex">
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "25%" }}
-                                >
-                                  {item.seller}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "25%" }}
-                                >
-                                  {item.property}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "25%" }}
-                                >
-                                  {item.price}
-                                </p>
-                                <p
-                                  className="table_item_text mb-0 detail_table_tbody_item"
-                                  style={{ width: "25%" }}
-                                >
-                                  {item.percent}
-                                </p>
-                              </div>
-                            </div>
+                            <tr className="table_item_divider" key={item.id}>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.seller}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.property}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.price}
+                              </td>
+                              <td className="table_item_text detail_table_tbody_item">
+                                {item.percent}
+                              </td>
+                            </tr>
                           );
                         })}
-                      </div>
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {flag === "Sobre" && (
+                  <div className="thirdtab overflow-x-scroll">
+                    <div className="Acer">
+                      Acerca del sistema de afiliación
                     </div>
-                  )}
-                  {flag === "Sobre" && (
-                    <div className="thirdtab overflow-x-scroll">
-                      <div className="Acer">
-                        Acerca del sistema de afiliación
+                    <div className="Tresbox">
+                      <div className="Tres">
+                        Tres pasos para ganar
                       </div>
-                      <div className="Tresbox">
-                        <div className="Tres">
-                          Tres pasos para ganar
-                        </div>
-                        <div className="Tres2 row overflow-y-scroll">
-                          <div className="col-md-4 d-flex flex-column vertical_divider1 overflow-y-scroll">
-                            <div className="Group">
+                      <div className="Tres2 row overflow-y-scroll">
+                        <div className="col-md-4 d-flex flex-column vertical_divider1 overflow-y-scroll">
+                          <div className="Group">
                             <img
-                                src={require("../images/Group1.png").default}
-                                width={"15px"}
-                                height={"15px"}
-                                alt="Group1"
-                                className="mt-25"
+                              src={require("../images/Group1.png").default}
+                              width={"15px"}
+                              height={"15px"}
+                              alt="Group1"
+                              className="mt-25"
                             />
-                            </div>
-                            <p className="Group2">
-                              Obtener enlace de afiliado
-                            </p>
-                            <p className="Group3">
-                              Conecta un monedero y genera tu enlace de referencia.
-                            </p>
                           </div>
-                          <div className="col-md-4 d-flex flex-column vertical_divider1 overflow-y-scroll">
-                            <div className="Group">
-                              <img
-                                  src={require("../images/Group2.png").default}
-                                  width={"15px"}
-                                  height={"15px"}
-                                  alt="Group2"
-                                  className="mt-25"
-                              />
-                            </div>
-                            <p className="Group2">
-                              Invita a tus amigos                          
-                            </p>
-                            <p className="Group3">
-                              Invita a tus amigos a conectarse a través de tu enlace de recomendación.
-                            </p>
-                          </div>
-                          <div className="col-md-4 d-flex flex-column overflow-y-scroll">
-                            <div className="Group">
-                              <img
-                                  src={require("../images/Group3.png").default}
-                                  width={"15px"}
-                                  height={"15px"}
-                                  alt="Group3"
-                                  className="mt-25"
-                              />
-                            </div>
-                            <p className="Group2">
-                              Gane criptomonedas
-                            </p>
-                            <p className="Group3">
-                              Obtén y da 5% de la inversión de nuevos referidos, hasta 60€ cada uno.
-                            </p>
-                          </div>
+                          <p className="Group2">
+                            Obtener enlace de afiliado
+                          </p>
+                          <p className="Group3">
+                            Conecta un monedero y genera tu enlace de referencia.
+                          </p>
                         </div>
-                        <div className="pagos">
-                          Pagos y plazos
+                        <div className="col-md-4 d-flex flex-column vertical_divider1 overflow-y-scroll">
+                          <div className="Group">
+                            <img
+                              src={require("../images/Group2.png").default}
+                              width={"15px"}
+                              height={"15px"}
+                              alt="Group2"
+                              className="mt-25"
+                            />
+                          </div>
+                          <p className="Group2">
+                            Invita a tus amigos
+                          </p>
+                          <p className="Group3">
+                            Invita a tus amigos a conectarse a través de tu enlace de recomendación.
+                          </p>
                         </div>
-                        <div className="ulol">
-                          <ul>
-                            <li>Los bonos del Plan Amigo, deberán canjearse en los 6 meses siguientes a la activación del mismo.</li>
-                            <li>El plan amigo no es acumulable con el resto de promociones. </li>
-                            <li>Si la oportunidad no se financia en su totalidad, no se entregarán las recompensas del Plan Amigo.</li>
-                          </ul>
+                        <div className="col-md-4 d-flex flex-column overflow-y-scroll">
+                          <div className="Group">
+                            <img
+                              src={require("../images/Group3.png").default}
+                              width={"15px"}
+                              height={"15px"}
+                              alt="Group3"
+                              className="mt-25"
+                            />
+                          </div>
+                          <p className="Group2">
+                            Gane criptomonedas
+                          </p>
+                          <p className="Group3">
+                            Obtén y da 5% de la inversión de nuevos referidos, hasta 60€ cada uno.
+                          </p>
                         </div>
                       </div>
                     </div>
-                  )}
+                    <div className="pagos">
+                      Pagos y plazos
+                    </div>
+                    <div className="ulol">
+                      <ul>
+                        <li>Los bonos del Plan Amigo, deberán canjearse en los 6 meses siguientes a la activación del mismo.</li>
+                        <li>El plan amigo no es acumulable con el resto de promociones. </li>
+                        <li>Si la oportunidad no se financia en su totalidad, no se entregarán las recompensas del Plan Amigo.</li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             <div className="col-md-4 col-custom col-sm-12  pl_24 pt_28 pb_55 pr-24">
