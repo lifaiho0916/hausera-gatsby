@@ -740,6 +740,9 @@
   height: 75px;
   background: #F3F3F3;
   border-radius: 8px;
+  padding: 16px 10px;
+  justify-content: center;
+  align-items: center;
   border: none;
 }
 
@@ -763,10 +766,17 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  padding-left: 20px;
   line-height: 19px;
   align-items: center;
   text-align: center;
   justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+  .number {
+    padding-left: 5px;
+  }
 }
 
 .rightfirst {

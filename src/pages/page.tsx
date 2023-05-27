@@ -118,7 +118,7 @@ const Page2Page: React.FC<PageProps> = () => {
   return (
     <main>
       <Header />
-      <section className=" mx-auto container">
+      <section className=" mx-auto container" style={{ marginBottom: '50px' }}>
         <div className="section">
           <div className="row">
             <div className="col-md-8 col-custom col-sm-12  vertical_divider pt_28">
@@ -136,19 +136,19 @@ const Page2Page: React.FC<PageProps> = () => {
                 </p>
               </div>
               <div className="leftsecond d-flex gap-30">
-                <button className="Amigosbtn d-flex p-8 justify-content-between">
+                <button className="Amigosbtn d-flex">
                   <div className="amigo1">
                     Amigos registrados
                   </div>
-                  <div className="number pr-20">
+                  <div className="number">
                     12
                   </div>
                 </button>
-                <button className="Amigosbtn d-flex p-8 justify-content-between">
+                <button className="Amigosbtn d-flex">
                   <div className="amigo1">
                     Amigos con inversión
                   </div>
-                  <div className="number pr-20">
+                  <div className="number">
                     5
                   </div>
                 </button>
